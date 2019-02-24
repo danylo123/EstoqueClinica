@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC 
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://192.168.3.38:1892/estocmed</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">ads20161</property>
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        <property name="generate_statistics">true</property>
+        <property name="use_sql_coments">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <mapping class="estocmed.tipodoproduto.TipoDoProduto"/> 
+        <mapping class="estocmed.usuario.Usuario"/>   
+        <mapping class="estocmed.destino.Destino"/>
+        <mapping class="estocmed.cidade.Cidade"/>    
+        <mapping class="estocmed.fornecedor.Fornecedor"/>         
+        <mapping class="estocmed.produtoconsumo.ProdutoConsumo"/>
+        <mapping class="estocmed.produtopermanente.ProdutoPermanente"/>      
+        <mapping class="estocmed.estoqueconsumo.EstoqueConsumo"/>
+        <mapping class="estocmed.estoquepermanente.EstoquePermanente"/>  
+        <mapping class="estocmed.saidaconsumo.SaidaConsumo"/>
+        <mapping class="estocmed.saidapermanente.SaidaPermanente"/>
+        <mapping class="estocmed.logs.Log"/> 
+        <mapping class="estocmed.setor.Setor"/> 
+        <mapping class="estocmed.curso.Curso"/> 
+
+    </session-factory>
+</hibernate-configuration>
+
+
